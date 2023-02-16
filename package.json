@@ -5,6 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
+    "lint": "eslint .  --ext .js",
+    "lint-fix": "eslint --fix .  --ext .js",
     "hooks": "npm i && git config core.hooksPath scripts && chmod +x scripts/pre-commit"
   },
   "author": "",
@@ -15,5 +17,10 @@
     "supertest": "^6.3.3"
   },
   "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1"
   }
 }

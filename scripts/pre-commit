@@ -6,6 +6,8 @@ git stash -q --keep-index
 
 npm test --watchAll=false
 
+npm run lint
+
 status=$?
 
 git stash pop -q

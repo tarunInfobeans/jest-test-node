@@ -5,7 +5,7 @@ describe('here we go', () => {
     test('checking the / get', async () => {
         const res = await request(app).get("/");
         // console.log('lets check the res', res);
-        expect(res.text).toEqual('HEY THERE');
+        expect(res.text).toEqual('HEY THERE xyz');
     });
     test('checking the /second-route post', async () => {
         const res = await request(app).post('/second-route');
