@@ -14,4 +14,8 @@ app.post('/second-route', (req, res) => {
     res.send('LETS CHECK THE SECOND ROUTE WITH A POST REQUEST');
 })
 
+app.get('/third-route', (req, res) => {
+    res.send('this is just demo here');
+})
+
 module.exports = app;

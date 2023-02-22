@@ -1,10 +1,12 @@
 #!/bin/sh
 
-echo "*****Running unit tests******"
-
 git stash -q --keep-index
 
+echo "*****Running Test Cases******"
+
 npm test --watchAll=false
+
+echo "*****Checking the Linting******"
 
 npm run lint
 
